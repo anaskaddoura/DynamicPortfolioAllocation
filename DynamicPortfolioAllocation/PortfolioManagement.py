@@ -1335,7 +1335,7 @@ def build_dml_dataset(
 
         #2 Output variable is simple returns --> Data Label
         # Convert from log-returns to simple returns
-        # Find an average daily return for an equal weight portfolio
+        # Find an average daily return for an equal weight portfolio (simple a priori application of DML)
         y_t = np.nanmean(np.exp(log_ret_next) - 1.0)
 
         # Filter against nan & inf values
