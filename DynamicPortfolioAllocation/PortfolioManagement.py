@@ -1044,7 +1044,7 @@ def run_ppo_seed_experiments(
         results_base = evaluate_model2(model_base, eval_env_base)
 
         summary_base = summarize_rl_results(
-            name=f"PPO_Jiang_Base_seed_{seed}",
+            name=f"PPO_LOG_RET_OHLCV_Base_seed_{seed}",
             results=results_base,
             model=model_base,
             model_params={"seed": seed, "pvm": False},
@@ -1090,7 +1090,7 @@ def run_ppo_seed_experiments(
         results_pvm = evaluate_model2(model_pvm, eval_env_pvm)
 
         summary_pvm = summarize_rl_results(
-            name=f"PPO_Jiang_LightPVM_seed_{seed}",
+            name=f"PPO_LOG_RET_OHLCV_LightPVM_seed_{seed}",
             results=results_pvm,
             model=model_pvm,
             model_params={"seed": seed, "pvm": True},
